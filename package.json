@@ -32,7 +32,8 @@
     "semantic-release": "semantic-release",
     "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
     "precommit": "lint-staged",
-    "travis-deploy-once": "travis-deploy-once"
+    "travis-deploy-once": "travis-deploy-once",
+    "dev": "node examples/server.js"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
@@ -82,6 +83,13 @@
     ]
   },
   "devDependencies": {
+    "webpack": "^4.28.4",
+    "webpack-dev-middleware": "^3.5.0",
+    "webpack-hot-middleware": "^2.24.3",
+    "ts-loader": "^5.3.3",
+    "tslint-loader": "^3.5.4",
+    "express": "^4.16.4",
+    "body-parser": "^1.18.3",
     "@commitlint/cli": "^7.1.2",
     "@commitlint/config-conventional": "^7.1.2",
     "@types/jest": "^23.3.2",
